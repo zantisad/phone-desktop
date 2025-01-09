@@ -4,42 +4,42 @@ export const Navigation = () => {
 
     const links = [
         {
-            id:1,
+            id: 1,
             link: "/calculadora",
             name: "Calculadora"
         },
         {
-            id:2,
+            id: 2,
             link: "/ajedrez",
             name: "Ajedrez"
         },
         {
-            id:3,
+            id: 3,
             link: "/clima",
             name: "Clima"
         },
         {
-            id:4,
+            id: 4,
             link: "/galeria",
             name: "Galeria"
         },
         {
-            id:5,
+            id: 5,
             link: "/bloc",
             name: "Bloc"
         },
         {
-            id:6,
+            id: 6,
             link: "/reloj",
             name: "Reloj"
         },
         {
-            id:7,
+            id: 7,
             link: "/spotify",
             name: "Spotify"
         },
         {
-            id:8,
+            id: 8,
             link: "/whatsapp",
             name: "WhatsApp"
         }
