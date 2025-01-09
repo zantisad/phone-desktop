@@ -1,1 +1,9 @@
 
+.app {
+    background-image: url('https://i.pinimg.com/736x/98/fc/1c/98fc1c0bdd8815fe7ad5b3990ef59cc0.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    overflow: hidden;
+}

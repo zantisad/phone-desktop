@@ -1,14 +1,12 @@
-import './App.css'
-import { PhoneRoutes } from './Routes/PhoneRoutes'
+import "./App.css";
+import { PhoneRoutes } from "./Routes/PhoneRoutes";
 
 function App() {
-
-
   return (
-    <>
-       <PhoneRoutes/> 
-    </>
-  )
+    <div className="app border-2 h-screen aspect-[12/16]">
+      <PhoneRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
