@@ -1,7 +1,7 @@
 export const TopBar = () => {
   return (
     <>
-        <div>TopBar</div>
+        <div className="topbar w-full bg-black text-center text-white">TopBar</div>
     </>
   )
 }
