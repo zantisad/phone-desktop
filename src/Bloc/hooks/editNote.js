@@ -9,10 +9,11 @@ export const useEditNote = (newData, setFormData) => {
 
     const closeEdit = (event) => {
             event.preventDefault()
+            if(!newData.title || !newData.description) return
             dispatch(editNote(newData))
         }
     
-    const editData = () => {
+    const getDataToEdit = () => {
         const noteFilter = notes.filter(note => (
             note.id === edit.idNote
         ))
@@ -20,7 +21,7 @@ export const useEditNote = (newData, setFormData) => {
     }
 
     useEffect(() => {
-        editData()
+        getDataToEdit()
     }, [edit.idNote])
 
     return {
