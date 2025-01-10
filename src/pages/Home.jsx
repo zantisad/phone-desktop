@@ -5,7 +5,9 @@ export const Home = () => {
   return (
     <>  
       <TopBar />
-      <Navigation />
+      <main className="w-full h-full p-10">
+        <Navigation />
+      </main>
     </>
   )
 }
