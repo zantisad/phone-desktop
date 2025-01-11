@@ -1,13 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router"
-import { Home } from "../pages/Home"
-import { Ajedrez } from "../pages/Ajedrez"
-import { Calculadora } from "../pages/Calculadora"
-import { Clima } from "../pages/Clima"
-import { Galeria } from "../pages/Galeria"
-import { Bloc } from "../pages/Bloc"
-import { Reloj } from "../pages/Reloj"
-import { Spotify } from "../pages/Spotify"
-import { WhatsApp } from "../pages/WhatsApp"
+import { Home, Ajedrez, Calculadora, Clima, Galeria, Bloc, Reloj, Spotify, WhatsApp } from "../pages"
 
 export const PhoneRoutes = () => {
   return (

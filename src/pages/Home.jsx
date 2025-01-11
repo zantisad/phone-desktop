@@ -4,8 +4,10 @@ import { TopBar } from "../components/TopBar/TopBar"
 export const Home = () => {
   return (
     <>  
-        <TopBar />
+      <TopBar />
+      <main className="w-full h-full p-10">
         <Navigation />
+      </main>
     </>
   )
 }
