@@ -37,6 +37,9 @@ import { Result } from "postcss";
             "-",
             "=",
             "C",
+            "del",
+            "+/-",
+            "%"
 
         ].includes(value)
         ) {
@@ -45,6 +48,25 @@ import { Result } from "postcss";
                     return
                 }
             }
+            if (value === "del") {
+                if (screen === "0" || screen.length === 1 || screen === "Error" || screen === "del") {
+                    setScreen("0");
+                    return;
+                }
+                setScreen(screen.slice(0, -1))
+                return;
+            }
+
+            if (value === "%") {
+                try {
+                    const result = parseFloat(screen) / 100;
+                    setScreen(result.toString());
+                } catch (error) {
+                    setScreen("Error");
+                }
+                return;
+            }
+
         if (screen === "0" || screen === "Error") {
             setScreen(value);
             return;
@@ -62,13 +84,13 @@ import { Result } from "postcss";
         } else if (screen.length < 9) {
             const result = screen + value;
             setScreen(result)
-        } else if (value === "%") {
-        
         } else {
 
         }
         }
     };
+
+    console.log(screen);
 
     return (
         <div className="calculator p-6 flex justify-center gap-6 text-center flex-col h-full w-full rounded-[2rem]">
